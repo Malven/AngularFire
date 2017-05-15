@@ -1,0 +1,9 @@
+<div class="panel panel-default" *ngFor="let course of (course$ | async)">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{course.description}}</h3>
+  </div>
+  <div class="panel-body">
+    <p class="description">{{course.longDescription}}</p>
+    <button class="btn btn-primary" [routerLink]="course.url">View</button>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<h2>All Lessons<small> Total # lessons: {{lessons?.length}}</small>
+</h2>
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">search term</label>
+    <div class="input-group">
+      <div class="input-group-addon">Search:</div>
+      <input #search (keyup)="onSearch(search.value)" type="text" class="form-control" id="exampleInputAmount" placeholder="...">
+    </div>
+  </div>
+</form>
+<hr>
+
+<app-lessons-list [lessons]="filtered"></app-lessons-list>

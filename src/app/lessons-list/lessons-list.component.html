@@ -1,0 +1,8 @@
+<div *ngFor="let lesson of lessons" class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{lesson?.description}}</h3>
+  </div>
+  <div class="panel-body">
+    <p class="duration"><i class="glyphicon glyphicon-time"></i> {{lesson?.duration}}</p>
+  </div>
+</div>
